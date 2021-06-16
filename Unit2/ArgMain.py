@@ -1,6 +1,6 @@
 import sys
 
-##Variables##
+##Variables globales##
 my_int = 0
 my_str = ""
 my_float = 0.0
@@ -9,7 +9,7 @@ my_list = [] ##list
 
 if __name__ == "__main__":
 
-    my_int = sys.argv[]
+    my_int = sys.argv[1]
     my_str = "Hola mundo"
     my_float = 3.14
     my_bool = False##False
