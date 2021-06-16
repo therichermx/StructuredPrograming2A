@@ -15,9 +15,11 @@ int main ( int argc, char**argv){
     //get address of var1 and var2
     //& = "la dirección de:" --> &x00879fb
     int *myptr1 = &var1;
+
     int *myptr2 = &var2;
 
     ShowIntAddress(myptr1);
+    
     ShowIntAddress(myptr2);
 
     printf("address var1: %p, \t address var2: %p, \n", &var1, &var2);
