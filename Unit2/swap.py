@@ -21,4 +21,4 @@ if __name__ == "__main__":
     print("swap program")
     #swap (a,b)
     a,b = b,a
-    print(f'values: a:{b}, b_{a}')
+    print(f'values: a:{b}, b:{a}')
