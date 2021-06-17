@@ -29,9 +29,18 @@ void ShowIntAddress(int* param){
     printf("address var1: %p\n", param);
 }
 
-void modifyVariableAddress (int* dir1, int* dir2){
+void ShowIntValueAdress(  int* param  ){
+        printf( "value: %i\n", *param );
+}
 
+void modifyVariablesAddress( int* dir1   ,  int* dir2, int multiplo ){
+        ShowIntAddress(dir1);
+        ShowIntValueAdress(dir1);
+        ShowIntAddress(dir2);
+        ShowIntValueAdress(dir2);
+        *dir1 =  *dir2 * multiplo;
+        *dir2 =  *dir1 * multiplo;
 
-
-    return;
+        return;
+        
 }
