@@ -19,4 +19,3 @@ int main(int argc, char** argv){
         myStructC.ShowIntAdress(&otroInt );
 
         return 0;
-}
