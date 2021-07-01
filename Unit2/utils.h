@@ -10,25 +10,11 @@ typedef struct utils {
         void (*ShowIntAdress) (int* param); //a pointer
         void (*ShowIntValueAdress)(  int* param);
 
-        void (*modifyVariablesAddress)( int* dir1   ,  int* dir2, int multiplo ){
-            ShowIntAddress(dir1);
-            ShowIntValueAdress(dir1);
-            ShowIntAdress(dir2);
-            ShowIntValueAdress(dir2);
-            *dir1 =  *dir2 * multiplo;
-            *dir2 =  *dir1 * multiplo;
-
-            return;
+        void (*modifyVariablesAddress)( int* dir1   ,  int* dir2, int multiplo );
         
-        }
-
-        void (*swapVariables)( int*ptr1, int*ptr2){
-            int temp = *ptr1;
-            *ptr1 = *ptr2;
-            *ptr2 = temp;
-            return;
-        }
-            
+        void (*swapVariables)( int*ptr1, int*ptr2);
+        void (*ShowFloatAddress)(float* param);
+        void (*ShowFloatValueAdress)(float* param);
         //void7+ swapGlobal(){
         //int temp = myVar1;
         //myVar1 = myVar2;
@@ -74,6 +60,14 @@ void ShowIntAddress(int* param){
 }
 
 void ShowIntValueAdress(  int* param  ){
+        printf( "value: %i\n", *param );
+}
+
+void ShowFloatAddress(float* param){
+    printf("address var1: %p\n", param);
+}
+
+void ShowFloatValueAdress(  float* param  ){
         printf( "value: %i\n", *param );
 }
 

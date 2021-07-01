@@ -27,6 +27,8 @@ int main ( int argc, char**argv){
     //*myptr = "El valor de" ---> &x00879fb =x;
     *myptr1 = 20;
     b = 40;
+    int** ptrDouble = &myptr1;
+    **ptrDouble;
 
     printf("a= %d, b= %d\n", a, b);
 
@@ -37,6 +39,10 @@ int main ( int argc, char**argv){
     //pasos de argumento por direccion:
     modifyVariablesAddress(&a, &b, 3);
     printf("a= %d, b= %d\n", a, b);
+
+    swapVariables(&a, &b);
+    swapGlobal();
+    printf("myVar1= %d, myVar2= &d\n", myVar1, myVar2);
 
     return 0;
 }
