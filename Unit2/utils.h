@@ -11,7 +11,7 @@ typedef struct utils {
         void (*ShowIntValueAdress)(  int* param);
 
         void (*modifyVariablesAddress)( int* dir1   ,  int* dir2, int multiplo );
-        
+        void (*mySwap) (int* ptr1, int* ptr2);
         void (*swapVariables)( int*ptr1, int*ptr2);
         void (*ShowFloatAddress)(float* param);
         void (*ShowFloatValueAdress)(float* param);
@@ -68,7 +68,7 @@ void ShowFloatAddress(float* param){
 }
 
 void ShowFloatValueAdress(  float* param  ){
-        printf( "value: %i\n", *param );
+        printf( "value: %f\n", *param );
 }
 
 void modifyVariablesAddress( int* dir1   ,  int* dir2, int multiplo ){

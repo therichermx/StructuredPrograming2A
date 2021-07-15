@@ -23,6 +23,7 @@ typedef struct naval
 int main(){
     Ground Tank = {"Tank", "Ground", 5, "Plains"};
     struct ground Ground = {"Tank", "Ground", 5, "Plains"};
+	
 
     Naval Cruiser = {"Cruiser", "Naval", 6, "Shoal"};
     struct naval Naval = {"Cruiser", "Naval", 6, "Shoal"};
