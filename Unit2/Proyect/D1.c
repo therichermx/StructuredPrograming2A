@@ -23,6 +23,7 @@ int main(){
             
         }
         return 0;
+    //Lista de 30 dias
     }else if(month == 4){
         printf("Month: April \n");
         for(i=1; i<=30 ; ++i){
@@ -42,6 +43,7 @@ int main(){
             printf("Dia %d\n", i);
             
         }
+    //lista de 31 dias
     }else if (month == 1){
         printf("Month: January \n");
         for(i=1; i<=31 ; ++i){
