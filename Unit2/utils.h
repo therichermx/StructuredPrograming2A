@@ -46,6 +46,10 @@ int addTwoNumbers(int argumento1, int argumento2){
     return result;
 }
 
+void average(){
+    
+}
+
 //Paso de argumentos por valor//
 void modifyVariable (int argumento1, int argumento2){
 
